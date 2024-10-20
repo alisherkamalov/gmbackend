@@ -1,22 +1,16 @@
 {
   "version": 2,
-<<<<<<< HEAD
-  "functions": {
-    "api/*.py": {
-      "runtime": "python3.9"
-    }
-  },
-  "routes": [
-    {
-      "src": "/download",
-      "dest": "/api/main.py"
-    }
-=======
   "builds": [
-    { "src": "main.py", "use": "@vercel/python" }
+    {
+      "src": "main.py",
+      "use": "@vercel/python"
+    }
   ],
   "routes": [
-    { "src": "/(.*)", "dest": "/main.py" }
->>>>>>> 3d3e6306168b9422cca11d9bba2d8e3af1a153be
+    {
+      "src": "/(.*)",
+      "dest": "main.py"
+    }
   ]
 }
+
